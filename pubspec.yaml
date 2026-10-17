@@ -1,0 +1,222 @@
+name: pick_more
+description: "A new Flutter project."
+# The following line prevents the package from being accidentally published to
+# pub.dev using `flutter pub publish`. This is preferred for private packages.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+# The following defines the version and build number for your application.
+# A version number is three numbers separated by dots, like 1.2.43
+# followed by an optional build number separated by a +.
+# Both the version and the builder number may be overridden in flutter
+# build by specifying --build-name and --build-number, respectively.
+# In Android, build-name is used as versionName while build-number used as versionCode.
+# Read more about Android versioning at https://developer.android.com/studio/publish/versioning
+# In iOS, build-name is used as CFBundleShortVersionString while build-number is used as CFBundleVersion.
+# Read more about iOS versioning at
+# https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
+# In Windows, build-name is used as the major, minor, and patch parts
+# of the product and file versions while build-number is used as the build suffix.
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.9.0
+
+# Dependencies specify other packages that your package needs in order to work.
+# To automatically upgrade your package dependencies to the latest versions
+# consider running `flutter pub upgrade --major-versions`. Alternatively,
+# dependencies can be manually updated by changing the version numbers below to
+# the latest version available on pub.dev. To see which dependencies have newer
+# versions available, run `flutter pub outdated`.
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_web_plugins:
+    sdk: flutter
+
+  firebase_auth: ^6.7.0
+  cloud_firestore: ^6.10.0
+  firebase_storage: ^13.6.0
+  firebase_messaging: ^16.7.0
+  provider: ^6.1.2
+  shared_preferences: ^2.3.2
+  url_launcher: ^6.3.1
+  google_maps_flutter: ^2.9.0
+  geolocator: ^14.0.2
+  geocoding: ^5.0.0
+  cached_network_image: ^3.4.1
+  image_picker: ^1.1.2
+  intl: ^0.20.3
+
+  # The following adds the Cupertino Icons font to your application.
+  # Use with the CupertinoIcons class for iOS style icons.
+  cupertino_icons: ^1.0.8
+  firebase_core: ^4.15.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_launcher_icons: ^0.14.3
+  flutter_native_splash: ^2.4.0
+
+  # The "flutter_lints" package below contains a set of recommended lints to
+  # encourage good coding practices. The lint set provided by the package is
+  # activated in the `analysis_options.yaml` file located at the root of your
+  # package. See that file for information about deactivating specific lint
+  # rules and activating additional ones.
+  flutter_lints: ^6.0.0
+
+# For information on the generic Dart part of this file, see the
+# following page: https://dart.dev/tools/pub/pubspec
+
+# The following section is specific to Flutter packages.
+flutter:
+
+  # The following line ensures that the Material Icons font is
+  # included with your application, so that you can use the icons in
+  # the material Icons class.
+  uses-material-design: true
+
+  assets:
+    # Option 1: List every single image file (fixes your duplicates and typos)
+    - assets/images/regular_pizza/cheese_lover.jpg
+    - assets/images/regular_pizza/chicken_fajita.jpg
+    - assets/images/regular_pizza/chicken_supreme.jpg
+    - assets/images/regular_pizza/chicken_tikka.jpg
+    - assets/images/regular_pizza/hot_and_spicy.jpg
+    - assets/images/regular_pizza/shawarma_pizza.jpg
+    - assets/images/regular_pizza/tandoori_pizza.jpg
+
+    # Appetizer Paths
+    - assets/images/appetizer/cheese_slice.jpg
+    - assets/images/appetizer/chicken_fried.jpg
+    - assets/images/appetizer/chicken_nuggets.jpg
+    - assets/images/appetizer/flaming_wings.jpg
+    - assets/images/appetizer/hot_shots.jpg
+    - assets/images/appetizer/hot_wings.jpg
+    - assets/images/appetizer/oven_baked_wings.jpg
+    - assets/images/appetizer/sauces.jpg
+
+    # Fries PAth:
+    - assets/images/fries/loaded_fries.jpg
+    - assets/images/fries/masala_fries.jpg
+
+    # Special Flavors Paths
+    - assets/images/special_flavors/bone_fire.jpg
+    - assets/images/special_flavors/malai_pizza.jpg
+    - assets/images/special_flavors/mughlai_pizza.jpg
+    - assets/images/special_flavors/nawabi_pizza.jpg
+    - assets/images/special_flavors/sp_pizza.jpg
+
+    # Highly Recommended Paths
+    - assets/images/highly_recommended/behari_kebab.jpg
+    - assets/images/highly_recommended/cheese_stuffer.jpg
+    - assets/images/highly_recommended/crow_crust.jpg
+    - assets/images/highly_recommended/grill_bite.jpg
+    - assets/images/highly_recommended/lazania_pizza.jpg
+    - assets/images/highly_recommended/stuff_crust.jpg
+
+    #Student Pizza
+    - assets/images/student_pizza.jpg
+
+    # Student Deals Paths
+    - assets/images/student_deals/deal_01.jpg
+    - assets/images/student_deals/deal_02.jpg
+    - assets/images/student_deals/deal_03.jpg
+    - assets/images/student_deals/deal_04.jpg
+    - assets/images/student_deals/deal_05.jpg
+    - assets/images/student_deals/deal_06.jpg
+
+    # Student Deals Paths
+    - assets/images/pizza_deals/deal_01.jpg
+    - assets/images/pizza_deals/deal_02.jpg
+    - assets/images/pizza_deals/deal_04.jpg
+    - assets/images/pizza_deals/deal_06.jpg
+    - assets/images/pizza_deals/deal_07.jpg
+
+    - assets/icons/icon.jpg
+
+     #Burger Zone
+    - assets/images/burger_zone/chapli.jpg
+    - assets/images/burger_zone/grillerd.jpg
+    - assets/images/burger_zone/om_chicken.jpg
+    - assets/images/burger_zone/omlete.jpg
+    - assets/images/burger_zone/patty.jpg
+    - assets/images/burger_zone/pizza_b.jpg
+    - assets/images/burger_zone/sp_chicken.jpg
+    - assets/images/burger_zone/tower.jpg
+    - assets/images/burger_zone/zinger.jpg
+
+      #Special Rolls
+    - assets/images/special_rolls/behari.jpg
+    - assets/images/special_rolls/chick_kebeb_roll.jpg
+    - assets/images/special_rolls/grill_paratha.jpg
+    - assets/images/special_rolls/zinger_pratha.jpg
+
+      #Sandwich
+    - assets/images/sandwich/lawa.jpg
+    - assets/images/sandwich/max.jpg
+    - assets/images/sandwich/stacker.jpg
+
+    #Pasta
+    - assets/images/pasta/creamy.jpg
+    - assets/images/pasta/crunchy_pasta.jpg
+
+    #burger deals
+    - assets/images/burger_deals/deal_01.jpg
+    - assets/images/burger_deals/deal_03.jpg
+    - assets/images/burger_deals/deal_09.jpg
+    - assets/images/burger_deals/deal_10.jpg
+
+    - assets/images/platter.jpg
+
+
+
+
+  # To add assets to your application, add an assets section, like this:
+  # assets:
+  #   - images/a_dot_burr.jpeg
+  #   - images/a_dot_ham.jpeg
+
+  # An image asset can refer to one or more resolution-specific "variants", see
+  # https://flutter.dev/to/resolution-aware-images
+
+  # For details regarding adding assets from package dependencies, see
+  # https://flutter.dev/to/asset-from-package
+
+  # To add custom fonts to your application, add a fonts section here,
+  # in this "flutter" section. Each entry in this list should have a
+  # "family" key with the font family name, and a "fonts" key with a
+  # list giving the asset and other descriptors for the font. For
+  # example:
+  # fonts:
+  #   - family: Schyler
+  #     fonts:
+  #       - asset: fonts/Schyler-Regular.ttf
+  #       - asset: fonts/Schyler-Italic.ttf
+  #         style: italic
+  #   - family: Trajan Pro
+  #     fonts:
+  #       - asset: fonts/TrajanPro.ttf
+  #       - asset: fonts/TrajanPro_Bold.ttf
+  #         weight: 700
+  #
+  # For details regarding fonts from package dependencies,
+  # see https://flutter.dev/to/font-from-package
+
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/icons/icon.jpg"
+  min_sdk_android: 21
+#  # Optional but recommended — adaptive icon for Android 8+
+#  adaptive_icon_background: "#ffffff"
+#  adaptive_icon_foreground: "assets/icons/app_icon_foreground.png"
+
+flutter_native_splash:
+  color: "#ffffff"
+  image: assets/icons/icon.jpg   # ← fixed (was app_icons.png)
+  android: true
+  ios: true
+  android_12:
+    color: "#ffffff"
+    image: assets/icons/icon.jpg

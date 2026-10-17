@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "947726399767",
+    "project_id": "pick-more-cc23f",
+    "storage_bucket": "pick-more-cc23f.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:947726399767:android:6790d37dd2054d6dd25f52",
+        "android_client_info": {
+          "package_name": "com.example.pick_more"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA7xndxBHCIJPg2-oj0bv2MGaMG08_Vrac"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
